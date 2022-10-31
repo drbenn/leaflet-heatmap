@@ -3,14 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MapComponent } from './map/map.component';
+
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import { HeatmapComponent } from './heatmap/heatmap.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MapComponent,
+    HeatmapComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LeafletModule
   ],
   providers: [],
   bootstrap: [AppComponent]
